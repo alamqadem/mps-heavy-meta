@@ -26,7 +26,7 @@
       <concept id="3413900370265300819" name="basic.language.structure.VariableReference" flags="ng" index="2Vn4cv">
         <reference id="3413900370265300820" name="variable" index="2Vn4co" />
       </concept>
-      <concept id="3413900370265338545" name="basic.language.structure.Equality" flags="ng" index="2VnuVX" />
+      <concept id="3413900370265338545" name="basic.language.structure.EqualsExpression" flags="ng" index="2VnuVX" />
       <concept id="3413900370265397639" name="basic.language.structure.EmptyStatement" flags="ng" index="2VnGnb" />
       <concept id="2163920077139595140" name="basic.language.structure.ExpressionStatement" flags="ng" index="1Yewps">
         <child id="2163920077139595141" name="expr" index="1Yewpt" />
@@ -87,8 +87,18 @@
     <node concept="2VnGnb" id="c_o3EJLh3T" role="2VmG41" />
     <node concept="2VmU1I" id="c_o3EJKtmR" role="2VmG41">
       <property role="TrG5h" value=" z" />
-      <node concept="2VmUez" id="c_o3EJKtne" role="2VmU1D">
-        <property role="2VmUeW" value="42" />
+      <node concept="2VnuVX" id="6ba0Xf48gKY" role="2VmU1D">
+        <node concept="2VnuVX" id="6ba0Xf48gKZ" role="1YfhPm">
+          <node concept="2VmUez" id="4UAwSuF_4b8" role="1YfhPm">
+            <property role="2VmUeW" value="3" />
+          </node>
+          <node concept="2VmUez" id="6ba0Xf48gGs" role="1YfhP8">
+            <property role="2VmUeW" value="4" />
+          </node>
+        </node>
+        <node concept="2VmUez" id="6ba0Xf48gLp" role="1YfhP8">
+          <property role="2VmUeW" value="4" />
+        </node>
       </node>
     </node>
     <node concept="2VmJN6" id="c_o3EJKtnz" role="2VmG41">

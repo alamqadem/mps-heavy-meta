@@ -50,7 +50,7 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="workbook" />
     <property role="R4oN_" value="container of statements" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2XwB4Mke_Pd" role="1TKVEi">
       <property role="IQ2ns" value="3413900370265136461" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -66,7 +66,7 @@
     <property role="EcuMT" value="3413900370265136460" />
     <property role="TrG5h" value="Statement" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2XwB4MkeA2a">
     <property role="EcuMT" value="3413900370265137290" />
@@ -103,7 +103,7 @@
     <property role="EcuMT" value="3413900370265193511" />
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="Expression" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2XwB4MkeNZJ">
     <property role="EcuMT" value="3413900370265194479" />
@@ -148,7 +148,7 @@
   </node>
   <node concept="1TIwiD" id="2XwB4MkfnaL">
     <property role="EcuMT" value="3413900370265338545" />
-    <property role="TrG5h" value="Equality" />
+    <property role="TrG5h" value="EqualsExpression" />
     <property role="34LRSv" value="==" />
     <property role="R4oN_" value="evaluates to true if the expressions are equal" />
     <ref role="1TJDcQ" node="1S7MtxweHid" resolve="BinaryExpression" />
