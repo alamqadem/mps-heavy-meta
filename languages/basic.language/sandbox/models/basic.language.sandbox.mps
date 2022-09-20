@@ -3,11 +3,24 @@
   <persistence version="9" />
   <languages>
     <use id="7f96d77a-0e2e-46f3-8bc4-ea37621434dc" name="basic.language" version="0" />
+    <use id="f0c0ee27-7536-49ff-b90f-c209380f82ce" name="test.language" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="f0c0ee27-7536-49ff-b90f-c209380f82ce" name="test.language">
+      <concept id="9144458353100582394" name="test.language.structure.BAssertStatement" flags="ng" index="193$Am">
+        <child id="9144458353100582397" name="expr" index="193$Ah" />
+      </concept>
+      <concept id="9144458353100547220" name="test.language.structure.BTestCase" flags="ng" index="193G3S">
+        <child id="9144458353100562685" name="statements" index="193wih" />
+      </concept>
+      <concept id="9144458353100547217" name="test.language.structure.BTestSuite" flags="ng" index="193G3X">
+        <child id="9144458353100547223" name="tests" index="193G3V" />
+      </concept>
+    </language>
     <language id="7f96d77a-0e2e-46f3-8bc4-ea37621434dc" name="basic.language">
       <concept id="7118506369075980862" name="basic.language.structure.BLowerThanExpression" flags="ng" index="2AUMBH" />
+      <concept id="7118506369075980861" name="basic.language.structure.BGreaterThanExpression" flags="ng" index="2AUMBI" />
       <concept id="3413900370265054612" name="basic.language.structure.BWorkbook" flags="ng" index="2Vmo7o">
         <child id="3413900370265136461" name="statements" index="2VmG41" />
       </concept>
@@ -30,6 +43,10 @@
       </concept>
       <concept id="3413900370265338545" name="basic.language.structure.BEqualsExpression" flags="ng" index="2VnuVX" />
       <concept id="3413900370265397639" name="basic.language.structure.BEmptyStatement" flags="ng" index="2VnGnb" />
+      <concept id="9144458353100780661" name="basic.language.structure.BIfStatement" flags="ng" index="192P0p">
+        <child id="5916525553330893526" name="condition" index="2kP8DM" />
+        <child id="5916525553330893528" name="then" index="2kP8DW" />
+      </concept>
       <concept id="9144458353099594208" name="basic.language.structure.BBooleanType" flags="ng" index="19fnQc" />
       <concept id="9144458353099594206" name="basic.language.structure.BIntegerType" flags="ng" index="19fnQM" />
       <concept id="9144458353099594207" name="basic.language.structure.BStringType" flags="ng" index="19fnQN" />
@@ -94,7 +111,7 @@
     </node>
     <node concept="2VmU1I" id="c_o3EJKtmR" role="2VmG41">
       <property role="TrG5h" value="z" />
-      <node concept="2VnuVX" id="6ba0Xf48gKZ" role="2VmU1D">
+      <node concept="2VnuVX" id="7VBD6KRV0$u" role="2VmU1D">
         <node concept="2VmUez" id="4UAwSuF_4b8" role="1YfhPm">
           <property role="2VmUeW" value="3" />
         </node>
@@ -139,7 +156,27 @@
         </node>
       </node>
     </node>
-    <node concept="2VnGnb" id="6ba0Xf48oD4" role="2VmG41" />
+    <node concept="192P0p" id="58rIaj6OHoD" role="2VmG41">
+      <node concept="2VnuVX" id="58rIaj6RCUN" role="2kP8DM">
+        <node concept="2VmUez" id="58rIaj6RCV6" role="1YfhP8">
+          <property role="2VmUeW" value="3" />
+        </node>
+        <node concept="2VmUez" id="58rIaj6OHpu" role="1YfhPm">
+          <property role="2VmUeW" value="3" />
+        </node>
+      </node>
+      <node concept="2VmJN6" id="58rIaj6OHqe" role="2kP8DW">
+        <node concept="2VmQH6" id="58rIaj6OHqg" role="1YeF50">
+          <property role="2VmQH7" value="Hello" />
+        </node>
+      </node>
+      <node concept="2VmU1I" id="58rIaj6Rf$o" role="2kP8DW">
+        <property role="TrG5h" value="x" />
+        <node concept="2VmUez" id="58rIaj6Rf_n" role="2VmU1D">
+          <property role="2VmUeW" value="0" />
+        </node>
+      </node>
+    </node>
     <node concept="1Yewps" id="c_o3EJLh0A" role="2VmG41">
       <node concept="2Vn3un" id="c_o3EJLh2s" role="1Yewpt">
         <node concept="2VmUez" id="c_o3EJLh10" role="1YfhPm">
@@ -149,6 +186,46 @@
           <property role="2VmUeW" value="11" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="193G3X" id="7VBD6KRUrDQ">
+    <property role="TrG5h" value="my tests" />
+    <node concept="193G3S" id="7VBD6KRUrDR" role="193G3V">
+      <property role="TrG5h" value="some name" />
+      <node concept="2VmU1I" id="7VBD6KRUuqO" role="193wih">
+        <property role="TrG5h" value="somevar" />
+        <node concept="19fnQM" id="7VBD6KRV24A" role="19fneb" />
+        <node concept="2VmUez" id="7VBD6KRVfgX" role="2VmU1D">
+          <property role="2VmUeW" value="0" />
+        </node>
+      </node>
+      <node concept="193$Am" id="7VBD6KRUHVj" role="193wih">
+        <node concept="2AUMBI" id="7VBD6KRUKNf" role="193$Ah">
+          <node concept="2VmUez" id="7VBD6KRUKN_" role="1YfhP8">
+            <property role="2VmUeW" value="1" />
+          </node>
+          <node concept="2VmUez" id="7VBD6KRUKN7" role="1YfhPm">
+            <property role="2VmUeW" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="193$Am" id="7VBD6KRUOWD" role="193wih">
+        <node concept="2VnuVX" id="7VBD6KRUOX6" role="193$Ah">
+          <node concept="2Vn4cv" id="7VBD6KRV0xO" role="1YfhP8">
+            <ref role="2Vn4co" node="7VBD6KRUuqO" resolve="somevar" />
+          </node>
+          <node concept="2VmUez" id="7VBD6KRUOWY" role="1YfhPm">
+            <property role="2VmUeW" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="1Yewps" id="7VBD6KRV22X" role="193wih">
+        <node concept="2Vn4cv" id="7VBD6KRVfgv" role="1Yewpt">
+          <ref role="2Vn4co" node="7VBD6KRUuqO" resolve="somevar" />
+        </node>
+      </node>
+      <node concept="2VnGnb" id="7VBD6KRUuri" role="193wih" />
+      <node concept="2VnGnb" id="7VBD6KRUuqA" role="193wih" />
     </node>
   </node>
 </model>
