@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="4sh7" ref="r:b94a7a3e-e4d9-46df-ae75-8a7507002cbf(basic.language.behavior)" implicit="true" />
     <import index="owy0" ref="r:1c62855e-b2de-4a7c-81d3-5a68b5627482(basic.language.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -59,6 +60,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -138,6 +142,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -155,9 +160,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -192,7 +194,7 @@
     </language>
   </registry>
   <node concept="18kY7G" id="6ba0Xf47O15">
-    <property role="TrG5h" value="check_Workbook" />
+    <property role="TrG5h" value="check_duplicateVariableNames" />
     <node concept="3clFbS" id="6ba0Xf47O16" role="18ibNy">
       <node concept="3cpWs8" id="6ba0Xf47PiX" role="3cqZAp">
         <node concept="3cpWsn" id="6ba0Xf47PiY" role="3cpWs9">
@@ -214,10 +216,10 @@
         <node concept="2OqwBi" id="6ba0Xf47R3I" role="2GsD0m">
           <node concept="2OqwBi" id="6ba0Xf47Pwo" role="2Oq$k0">
             <node concept="1YBJjd" id="6ba0Xf47PlD" role="2Oq$k0">
-              <ref role="1YBMHb" node="6ba0Xf47O18" resolve="workbook" />
+              <ref role="1YBMHb" node="6ba0Xf47O18" resolve="bStatementContainer" />
             </node>
-            <node concept="3Tsc0h" id="6ba0Xf47PF3" role="2OqNvi">
-              <ref role="3TtcxE" to="owy0:2XwB4Mke_Pd" resolve="statements" />
+            <node concept="2qgKlT" id="WXWDRA6EsJ" role="2OqNvi">
+              <ref role="37wK5l" to="4sh7:7VBD6KRUUC0" resolve="getStatements" />
             </node>
           </node>
           <node concept="v3k3i" id="6ba0Xf47Spd" role="2OqNvi">
@@ -285,8 +287,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="6ba0Xf47O18" role="1YuTPh">
-      <property role="TrG5h" value="workbook" />
-      <ref role="1YaFvo" to="owy0:2XwB4MkehQk" resolve="BWorkbook" />
+      <property role="TrG5h" value="bStatementContainer" />
+      <ref role="1YaFvo" to="owy0:7VBD6KRUUBO" resolve="BStatementContainer" />
     </node>
   </node>
   <node concept="1YbPZF" id="6ba0Xf480PS">
