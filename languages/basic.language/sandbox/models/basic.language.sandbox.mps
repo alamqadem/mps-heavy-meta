@@ -8,6 +8,13 @@
   <imports />
   <registry>
     <language id="f0c0ee27-7536-49ff-b90f-c209380f82ce" name="test.language">
+      <concept id="6636860409912541622" name="test.language.structure.BExecuteSingleTest" flags="ng" index="18ExNn">
+        <reference id="6636860409912541623" name="testCase" index="18ExNm" />
+        <reference id="6636860409912558209" name="testSuite" index="18EXZw" />
+      </concept>
+      <concept id="6636860409912489018" name="test.language.structure.BExecuteTests" flags="ng" index="18Hi_r">
+        <reference id="6636860409912489019" name="testSuite" index="18Hi_q" />
+      </concept>
       <concept id="9144458353100582394" name="test.language.structure.BAssertStatement" flags="ng" index="193$Am">
         <child id="9144458353100582397" name="expr" index="193$Ah" />
       </concept>
@@ -108,6 +115,7 @@
           <ref role="2Vn4co" node="c_o3EJKtk8" resolve="a" />
         </node>
       </node>
+      <node concept="19fnQc" id="WXWDRA7gcr" role="19fneb" />
     </node>
     <node concept="2VmU1I" id="c_o3EJKtmR" role="2VmG41">
       <property role="TrG5h" value="z" />
@@ -204,6 +212,13 @@
         </node>
       </node>
     </node>
+    <node concept="18Hi_r" id="5KqRm4kGc5n" role="2VmG41">
+      <ref role="18Hi_q" node="7VBD6KRUrDQ" resolve="my tests" />
+    </node>
+    <node concept="18ExNn" id="5KqRm4kGg8S" role="2VmG41">
+      <ref role="18EXZw" node="7VBD6KRUrDQ" resolve="my tests" />
+      <ref role="18ExNm" node="7VBD6KRUrDR" resolve="some name" />
+    </node>
   </node>
   <node concept="193G3X" id="7VBD6KRUrDQ">
     <property role="TrG5h" value="my tests" />
@@ -243,6 +258,12 @@
       </node>
       <node concept="2VnGnb" id="7VBD6KRUuri" role="193wih" />
       <node concept="2VnGnb" id="7VBD6KRUuqA" role="193wih" />
+    </node>
+  </node>
+  <node concept="193G3X" id="5KqRm4kGg9O">
+    <property role="TrG5h" value="some other test" />
+    <node concept="193G3S" id="5KqRm4kGg9P" role="193G3V">
+      <property role="TrG5h" value="some name" />
     </node>
   </node>
 </model>
