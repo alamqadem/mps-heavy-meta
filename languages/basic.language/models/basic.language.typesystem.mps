@@ -569,7 +569,7 @@
                   <ref role="1YBMHb" node="6ba0Xf49bvK" resolve="variableDeclaration" />
                 </node>
                 <node concept="3TrEf2" id="7VBD6KRTJhv" role="2OqNvi">
-                  <ref role="3Tt5mk" to="owy0:7VBD6KRQHvB" resolve="type" />
+                  <ref role="3Tt5mk" to="owy0:7VBD6KRQHvB" resolve="declaredType" />
                 </node>
               </node>
             </node>
@@ -593,7 +593,7 @@
                   <ref role="1YBMHb" node="6ba0Xf49bvK" resolve="variableDeclaration" />
                 </node>
                 <node concept="3TrEf2" id="7VBD6KRTJfe" role="2OqNvi">
-                  <ref role="3Tt5mk" to="owy0:7VBD6KRQHvB" resolve="type" />
+                  <ref role="3Tt5mk" to="owy0:7VBD6KRQHvB" resolve="declaredType" />
                 </node>
               </node>
             </node>
@@ -613,7 +613,7 @@
               <ref role="1YBMHb" node="6ba0Xf49bvK" resolve="variableDeclaration" />
             </node>
             <node concept="3TrEf2" id="7VBD6KRTDED" role="2OqNvi">
-              <ref role="3Tt5mk" to="owy0:7VBD6KRQHvB" resolve="type" />
+              <ref role="3Tt5mk" to="owy0:7VBD6KRQHvB" resolve="declaredType" />
             </node>
           </node>
         </node>
@@ -710,6 +710,32 @@
     <node concept="1YaCAy" id="58rIaj6OHqX" role="1YuTPh">
       <property role="TrG5h" value="bIfStatement" />
       <ref role="1YaFvo" to="owy0:7VBD6KRVfhP" resolve="BIfStatement" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3Vy$fUNhcvH">
+    <property role="TrG5h" value="typeof_BBooleanLiteral" />
+    <property role="3GE5qa" value="expr" />
+    <node concept="3clFbS" id="3Vy$fUNhcvI" role="18ibNy">
+      <node concept="1Z5TYs" id="3Vy$fUNhcEB" role="3cqZAp">
+        <node concept="mw_s8" id="3Vy$fUNhcEV" role="1ZfhKB">
+          <node concept="2pJPEk" id="3Vy$fUNhcER" role="mwGJk">
+            <node concept="2pJPED" id="3Vy$fUNhcET" role="2pJPEn">
+              <ref role="2pJxaS" to="owy0:7VBD6KRQHBw" resolve="BBooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3Vy$fUNhcEE" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3Vy$fUNhcvO" role="mwGJk">
+            <node concept="1YBJjd" id="3Vy$fUNhcxG" role="1Z2MuG">
+              <ref role="1YBMHb" node="3Vy$fUNhcvK" resolve="bBooleanLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3Vy$fUNhcvK" role="1YuTPh">
+      <property role="TrG5h" value="bBooleanLiteral" />
+      <ref role="1YaFvo" to="owy0:3Vy$fUNgEhr" resolve="BBooleanLiteral" />
     </node>
   </node>
 </model>

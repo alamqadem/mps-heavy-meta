@@ -13,6 +13,8 @@
     <import index="o56w" ref="r:1495ea3d-3f2a-4d6b-a0a0-568f30e27991(basic.language.intentions)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -55,6 +57,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="5773579205429866751" name="jetbrains.mps.lang.test.structure.EditorComponentExpression" flags="nn" index="369mXd" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -131,6 +134,9 @@
       </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
+      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
+        <child id="7080278351417106681" name="expression" index="2Hmdds" />
+      </concept>
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
@@ -527,6 +533,27 @@
     <node concept="3clFbS" id="WXWDRA6Y2N" role="LjaKd">
       <node concept="1MFPAf" id="WXWDRA6Y2M" role="3cqZAp">
         <ref role="1MFYO6" to="o56w:WXWDRA6U5_" resolve="addTypeToVariable" />
+      </node>
+      <node concept="2Hmddi" id="TwTsmcPIxs" role="3cqZAp">
+        <node concept="2OqwBi" id="TwTsmcPIGT" role="2Hmdds">
+          <node concept="369mXd" id="TwTsmcPIyj" role="2Oq$k0" />
+          <node concept="liA8E" id="TwTsmcPIRp" role="2OqNvi">
+            <ref role="37wK5l" to="dxuu:~JComponent.getActionMap()" resolve="getActionMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hmddi" id="TwTsmcPIZZ" role="3cqZAp">
+        <node concept="2OqwBi" id="TwTsmcPJ$r" role="2Hmdds">
+          <node concept="2OqwBi" id="TwTsmcPJa$" role="2Oq$k0">
+            <node concept="369mXd" id="TwTsmcPJ0n" role="2Oq$k0" />
+            <node concept="liA8E" id="TwTsmcPJtD" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+            </node>
+          </node>
+          <node concept="liA8E" id="TwTsmcPJK2" role="2OqNvi">
+            <ref role="37wK5l" to="exr9:~EditorContext.getInspector()" resolve="getInspector" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
