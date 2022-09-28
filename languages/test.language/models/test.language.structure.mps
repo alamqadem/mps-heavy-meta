@@ -90,7 +90,7 @@
   <node concept="1TIwiD" id="5KqRm4kFZgU">
     <property role="EcuMT" value="6636860409912489018" />
     <property role="TrG5h" value="BExecuteTests" />
-    <property role="34LRSv" value="execute test" />
+    <property role="34LRSv" value="execute tests" />
     <ref role="1TJDcQ" to="owy0:2XwB4Mke_Pc" resolve="BStatement" />
     <node concept="1TJgyj" id="5KqRm4kFZgV" role="1TKVEi">
       <property role="IQ2ns" value="6636860409912489019" />

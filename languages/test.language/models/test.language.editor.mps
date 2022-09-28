@@ -192,8 +192,9 @@
       <node concept="1iCGBv" id="5KqRm4kGgab" role="3EZMnx">
         <ref role="1NtTu8" to="uaek:5KqRm4kGga1" resolve="testSuite" />
         <node concept="1sVBvm" id="5KqRm4kGgad" role="1sWHZn">
-          <node concept="3F0ifn" id="5KqRm4kGgap" role="2wV5jI">
-            <property role="3F0ifm" value="name" />
+          <node concept="3F0A7n" id="6NIsFOYN8wy" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
